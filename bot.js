@@ -35,7 +35,10 @@ async function postTweet() {
 }
 
 
-cron.schedule('0,6,12,18,23', ()=>{
+cron.schedule('0 0,6,12,18,23 * * *', () => {
+    console.log("Posting Naval Wisdom!");
     postTweet();
-})
+}, {
+    timezone: "America/Los_Angeles"
+});
 // Run the bot
