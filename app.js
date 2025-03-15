@@ -68,4 +68,17 @@ app.listen(3005, process.env.IP, function(){
   console.log("Server running on port 3005");
 });
 
-module.exports = app;
+const axios = require('axios');
+
+const getRandomQuote = async () => {
+  try {
+    const response = await axios.get('http://localhost:3005/random'); // Ensure your server is running
+    return response.data.quote; // Adjust based on your API response
+  } catch (error) {
+    console.error('Error fetching quote:', error);
+    return null;
+  }
+};
+
+module.exports = { app, getRandomQuote };
+
