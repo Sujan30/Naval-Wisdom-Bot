@@ -1,20 +1,39 @@
-🧠 Naval Wisdom Bot
+# 🧠 Naval Wisdom Bot
 
-A bot that cuts through the noise and delivers timeless wisdom from Naval Ravikant—entrepreneur, investor, and philosopher.
+Naval Wisdom Bot is a lightweight Twitter automation tool that shares timeless insights from Naval Ravikant — covering wealth, decision-making, happiness, and self-actualization. It's built to deliver short bursts of clarity in an increasingly noisy digital world.
 
-🚀 What It Does
+---
 
-It posts short, powerful insights on wealth, happiness, decision-making, and life under the handle @navals_wisdom on X. No fluff. No filler. Just clarity.
+## ✨ Features
 
-🔗 Where the Wisdom Comes From
+- 💬 **Automated Wisdom Posting**  
+  Tweets curated quotes from Naval Ravikant at scheduled intervals.
 
-The quotes are sourced from the Naval API, built by @avijeets. This API distills Naval’s best thoughts from podcasts, interviews, and tweets—so you get the signal, not the noise. (https://github.com/avijeets/naval-api)
+- 🧠 **High-Signal Curation**  
+  Pulls from a handpicked collection of Naval’s most profound thoughts (no fluff).
 
-🔥 Why Follow?
-	•	Play long-term games with long-term people.
-	•	Learn to build, learn to sell. If you do both, you’ll be unstoppable.
-	•	Happiness is a skill. Wealth is a skill. Both are learnable.
+- 🛠️ **Easy-to-Modify JSON Quote Bank**  
+  Add your own quotes or customize the message style.
 
-This bot delivers these truths daily. No shortcuts. No hacks. Just the foundations of a good life.
+- 🐍 **Built with Python**  
+  Clean, modular code using Tweepy for Twitter API interaction.
 
-👉 Follow @navals_wisdom and let compounding do the work.
+---
+
+## 🛠️ Setup
+
+### 📦 Requirements
+
+- Python 3.10+
+- Tweepy (Twitter API client)
+- `.env` file with Twitter API keys
+
+### 🔧 Environment Setup
+
+Create a `.env` file in the root directory:
+
+```env
+API_KEY=your_api_key
+API_KEY_SECRET=your_api_key_secret
+ACCESS_TOKEN=your_access_token
+ACCESS_TOKEN_SECRET=your_access_token_secret
